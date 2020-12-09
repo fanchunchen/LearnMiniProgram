@@ -1,0 +1,8 @@
+<!--pages/text/text.wxml-->
+<text>哈哈哈\n</text>
+<text>呵呵呵\n</text>
+<text user-select>Hello Fan\n</text>
+<text space="ensp">Hello World\n</text>
+<text space="emsp">Hello World\n</text>
+<text space="nbsp">Hello World\n</text>
+<text decode>5 &gt; 3</text>
