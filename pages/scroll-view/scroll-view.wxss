@@ -1,0 +1,26 @@
+/* pages/scroll-view/scroll-view.wxss */
+.container {
+  background-color: #bfa;
+  height: 200px;
+  margin-bottom:20px
+}
+
+.item {
+  background-color: red;
+  
+  height: 100px;
+  margin: 10px
+}
+.container1 {
+  background-color: #bfa;
+  height: 200px;
+ white-space: nowrap;
+}
+
+.item1 {
+  background-color: red;
+  width: 100px;
+  height: 100px;
+  margin: 10px;
+  display: inline-block;
+}

@@ -1,0 +1,9 @@
+<!--pages/input/input.wxml-->
+<input type="text"/>
+<input type="number"/>
+<input  placeholder="哈哈哈"/>
+<input value="hahha" />
+<input bindfocus="handleFocus"/>
+<input bindblur="handleBlur"/>
+<input bindinput="handleInput"/>
+
