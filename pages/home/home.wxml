@@ -1,4 +1,8 @@
 <!--miniprogram/pages/home/home.wxml-->
-<text class="title">hello word</text>
-<button size="mini">按钮</button>
-<view>知识点1</view>
+<view>Hello {{name}}</view>
+<view wx:for="{{stu}}">{{item.name}}-{{item.age}}-{{item.height}}</view>
+<view>当前计数：{{counter}}</view>
+<button bindtap="addClick" size="mini">+</button>
+<button bindtap="subClick" size="mini">-</button>
+<button open-type="getPhoneNumber" bindgetphonenumber="handleBtnClick" size="mini">用户信息</button>
+<view wx:for="{{list}}">{{item.title}}</view>
