@@ -1,0 +1,8 @@
+<!--pages/image/image.wxml-->
+<image src="/assets/1.png"></image>
+<image src="/assets/0.4cb08bb4.jpg"></image>
+<button bindtap="handleImage">按钮</button>
+<image src="{{imagePath}}"></image>
+<image src="https://res.wx.qq.com/wxdoc/dist/assets/img/0.4cb08bb4.jpg"></image>
+<view>----------------</view>
+<image vx:for="{{10}}" src="https://res.wx.qq.com/wxdoc/dist/assets/img/0.4cb08bb4.jpg"></image>

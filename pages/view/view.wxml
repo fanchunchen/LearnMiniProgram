@@ -1,0 +1,7 @@
+<!--pages/view/view.wxml-->
+<view>哈哈哈</view>
+<view>呵呵呵</view>
+<view class="box1" hover-class="hover-view" hover-stay-time="2000">box1</view>
+<view class="box1" hover-class="hover-view">box1
+  <view class="box2" hover-class="hover-view1" hover-stop-propagation="true">box2</view>
+</view>
