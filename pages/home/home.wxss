@@ -1,2 +1,8 @@
 /* miniprogram/pages/home/home.wxss */
-.title{color:red}
+.title {
+  color: red
+}
+
+view {
+  background-color: red
+}

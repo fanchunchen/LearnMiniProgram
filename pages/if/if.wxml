@@ -1,0 +1,13 @@
+<!--pages/if/if.wxml-->
+<button size="mini" bindtap="btnClick">切换颜色</button>
+<view class="{{isActive?'active':''}}">哈哈哈
+</view>
+<view>{{time}}</view>
+<view>{{age>=18?'成年人':'未成年人'}}</view>
+<view vx:if="{{score>=90}}">优秀</view>
+<view>--------</view>
+<view wx:if="{{score>=90}}">优秀</view>
+<view wx:elif="{{score>=80}}">良好</view>
+<view wx:elif="{{score>=60}}">及格</view>
+<view wx:else>不及格</view>
+<button size="mini" bindtap="scoreIncrement">分数</button>

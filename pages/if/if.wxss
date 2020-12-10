@@ -1,0 +1,2 @@
+/* pages/if/if.wxss */
+.active{color:red}

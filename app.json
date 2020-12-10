@@ -1,6 +1,8 @@
 {
   "pages": [
+  "pages/if/if",
     "pages/home/home",
     "pages/about/about"
-  ]
+  ],
+  "sitemapLocation": "sitemap3.json"
 }
