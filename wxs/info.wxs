@@ -1,0 +1,10 @@
+var message = "哈哈哈"
+var sum = function (num1, num2) { return num1 + num2 }
+var name = 'codewhy'
+var valueToFixed=function(value){return value.toFixed(2)}
+module.exports = {
+  message: message,
+  name: name,
+  sum: sum,
+  valueToFixed:valueToFixed
+}

@@ -1,0 +1,4 @@
+/* pages/wxml/wxml.wxss */
+.box{background-color:#bfa;width: 100px;height: 100px;}
+.container{display: flex;}
+.item{flex:1;text-align:center}

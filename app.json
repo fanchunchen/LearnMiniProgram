@@ -1,6 +1,9 @@
 {
   "pages": [
+    "pages/wxml/wxml",
+    "pages/v-for/v-for",
     "pages/home/home",
     "pages/about/about"
+ 
   ]
 }

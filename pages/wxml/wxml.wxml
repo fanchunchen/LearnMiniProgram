@@ -1,0 +1,24 @@
+<!--pages/wxml/wxml.wxml-->
+<!-- <wxs module="info">
+ var message = "哈哈哈"
+  var sum = function (num1, num2) { return num1 + num2 }
+  var name = 'codewhy'
+  module.exports = {
+    message: message,
+    name: name,
+    sum: sum
+  }
+</wxs> -->
+<wxs src="../../wxs/info.wxs" module="info"></wxs>
+<view>{{info.message}}</view>
+<view>{{info.name}}</view>
+<view>{{info.sum(20,30)}}</view>
+<view>{{info.valueToFixed(25.666666)}}</view>
+<button size="mini" catchtap="handleBtnClick">按钮</button>
+<view class="box" bindlongpress="handleLongpress" bindtouchstart="handleTouchStart" bindtouchend="handleTouchEnd"
+  bindtap="handleTap" bindtouchmove="handleTouchMove"></view>
+<view class="container">
+  <block class="container" wx:for="{{titles}}" wx:key="index">
+    <view data-index="{{index}}" bindtap="handleItemClick" data-item="{{item}}" class="item">{{item}}</view>
+  </block>
+</view>

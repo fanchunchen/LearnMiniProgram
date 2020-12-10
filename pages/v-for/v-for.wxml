@@ -1,0 +1,26 @@
+<!--pages/v-for/v-for.wxml-->
+<import src="/template/template.wxml"></import>
+<import src="/template/content.wxml"> </import>
+<include src="/template/header.wxml" />
+<view wx:for="{{['cba','nba','xba']}}" wx:key="index">{{item}} {{index}} </view>
+<view wx:for="codeWhy" wx:key="index">{{item}} {{index}}</view>
+<view wx:for="{{9}}" wx:key="index">{{item}}</view>
+<view wx:for="{{movies}}" wx:for-index="idx" wx:for-item="movies" wx:key="idx">{{idx}} {{movies}}</view>
+<block wx:for="{{nums}}" wx:key="index">
+  <text wx:for="{{item}}" wx:for-item="num" wx:key="index">{{num}}</text>
+</block>
+<template name="odd"><view>奇数:{{num}}</view></template>
+<template name="even"><view>偶数:{{num}}</view></template>
+<!-- <template name="contentItem">
+  <button>{{btnText}}</button>
+  <view>{{content}}</view>
+</template> -->
+
+<block wx:for="{{[11,22,7,13,100]}}" wx:key="index">
+  <template is="{{item%2==0?'even':'odd'}}" data="{{num:item}}">{{num}}</template>
+</block>
+<template is="contentItem" data="{{btnText:'点击',content:'哈哈哈'}}"></template>
+<template is="contentItem" data="{{btnText:'登录',content:'嘿嘿嘿'}}"></template>
+<template is="contentItem" data="{{btnText:'重置',content:'呵呵呵'}}"></template>
+<template is="contentItem" data="{{btnText:'退出',content:'嘻嘻嘻'}}"></template>
+<template is="content"></template>
