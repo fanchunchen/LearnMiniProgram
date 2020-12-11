@@ -1,3 +1,8 @@
 <!--miniprogram/pages/home/home.wxml-->
 <text class="title">hello word</text>
 <button size="mini">按钮</button>
+<navigator url="/pages/about/about" open-type="switchTab">跳转到关于页switch</navigator>
+<navigator url="/pages/detail/detail?name=codewhy&age=18">跳转到详情页</navigator>
+
+<view>{{title}}</view>
+<button size="mini" bindtap="handleBtnClick">跳转到详情页</button>
