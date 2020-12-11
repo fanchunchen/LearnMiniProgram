@@ -1,0 +1,2 @@
+<!--components/my-cpn1/my-cpn1.wxml-->
+<button size="mini" bindtap="handleIncrement">+1</button>

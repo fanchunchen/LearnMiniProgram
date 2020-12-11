@@ -1,3 +1,17 @@
 <!--miniprogram/pages/home/home.wxml-->
 <text class="title">hello word</text>
 <button size="mini">按钮</button>
+<my-cpn title="哈哈哈" titleclass="red"></my-cpn>
+<my-cpn title="呵呵呵" titleclass="green"></my-cpn>
+<my-cpn ></my-cpn>
+<view>{{counter}}</view>
+<my-cpn1 bindincrement="handleIncrement"></my-cpn1>
+<w-tab-control binditemClick="handleTabClick" titles="{{['流行','新款','精选']}}"></w-tab-control>
+<button size="mini" bindtap="handleBtnClick">按钮</button>
+<my-sel class="my-sel"></my-sel>
+
+<my-slot> 
+<text slot="slot1">我是组件内容</text>
+<button size="mini" slot="slot2">按钮</button>
+<slider slot="slot3" value="50"></slider>
+</my-slot>

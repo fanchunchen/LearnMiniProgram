@@ -5,7 +5,23 @@ Page({
    * 页面的初始数据
    */
   data: {
-
+counter:1
+  },
+  handleIncrement(e){
+    // console.log(1);
+    console.log(e);
+  this.setData({
+    counter:this.data.counter+1
+  })
+  },
+  handleTabClick(e){console.log(e);},
+  handleBtnClick(){
+    const my_sel=this.selectComponent('.my-sel')
+    // console.log(my_sel);
+    // my_sel.setData({
+    //   counter:my_sel.data.counter+1
+    // })
+    my_sel.increment(10)
   },
 
   /**
