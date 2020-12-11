@@ -1,4 +1,5 @@
 // miniprogram/pages/home/home.js
+import request from '../../service/network'
 Page({
 
   /**
@@ -12,7 +13,27 @@ Page({
    * 生命周期函数--监听页面加载
    */
   onLoad: function (options) {
+    // wx.request({
+    //   url: 'http://152.136.185.210:8000/api/w6/recommend',
+    //   success: function (res) { console.log(res); }
+    // }),
+    // wx.request({
+    //   url: 'http://152.136.185.210:8000/api/w6/home/data?type=sell&page=1',
+    //   success:function(res){console.log(res)}
+    // })
+    // wx.request({
+    //   url: 'http://152.136.185.210:8000/api/w6/',
+    //   data: {
+    //     type: "sell",
+    //     page: 1
+    //   },
+    //   success: function (res) { console.log(res) }
+    // })
+    request({
+      url: 'http://152.136.185.210:8000/api/w6/home/data',
+      data:{type:"sell",page:1}
 
+    }).then(res => { console.log(res); }).catch(err => console.log(err))
   },
 
   /**
